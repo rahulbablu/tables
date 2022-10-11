@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table 2</title>
+    <style type="text/css">
+        *{
+            text-align: center;
+        }
+
+        table{
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+
+        th, td{
+            border: 1px solid black;
+            padding: 10px 20px;
+        }
+        
+        tbody>tr>td{
+            font-size: 0.9rem;
+            font-style: italic;
+        }
+
+        tfoot>tr:first-child{
+            font-weight: bold;
+        }
+
+        thead>tr, tfoot>tr{
+            background-color: rgb(235, 231, 231);
+        }
+        .alt{
+            background-color: rgb(250, 250, 250);
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <caption style="padding: 0;"><h1>Expenses</h1></caption>
+        <colgroup>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col style="background-color: rgb(245, 243, 243) ;">
+        </colgroup>
+
+        <thead>
+            <tr>
+                <th>Purchase</th>
+                <th>Location</th>
+                <th>Date</th>
+                <th>Evaluation</th>
+                <th>Cost</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="alt">
+                <td>Haircut</td>
+                <td>Hairdresser</td>
+                <td>12/09</td>
+                <td>Great Idea</td>
+                <td>150</td>
+            </tr>
+            <tr>
+                <td>Biryani</td>
+                <td>Hotel</td>
+                <td>12/09</td>
+                <td>Tastes Good</td>
+                <td>120</td>
+            </tr>
+            <tr class="alt">
+                <td>Shoes</td>
+                <td>ShoeShop</td>
+                <td>13/09</td>
+                <td>Regrets</td>
+                <td>1200</td>
+            </tr>
+            <tr>
+                <td>Groceries</td>
+                <td>Supermarket</td>
+                <td>13/09</td>
+                <td>Good</td>
+                <td>3000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">SUM</td>
+                <td>4470</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
